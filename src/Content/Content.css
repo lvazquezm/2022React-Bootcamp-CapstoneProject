@@ -1,12 +1,14 @@
 .content-container{
+    background-color: #F1EEE9;   
+}
+.home-page{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     height: 10%;
     min-height: fit-content;
-    background-color: #F1EEE9;;
 }
 .banner-container{
     display: flex;
