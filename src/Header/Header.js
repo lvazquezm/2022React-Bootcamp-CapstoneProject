@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import logoImage from '../Images/Header/furnitures.png'
 import './Header.css'
 
 export default function Header() {
@@ -9,13 +10,25 @@ export default function Header() {
         setSearchItem(e.target.value);
     }
 
+    function Logo(){
+        return(
+            <img
+                data-testid='imageLogo'
+                src={logoImage}
+                alt="Logo"
+                onClick={handleLogoOnClick}
+            />
+        )
+    }
+
+    const handleLogoOnClick = (e) =>{
+        e.preventDefault();
+    }
+
     return(
         <div className='header-container'>
             <div className='header'>
-                <img
-                    src={require('../Images/Header/furnitures.png').default}
-                    alt="Logo"
-                />
+                <Logo/>
                 <h1>Rusty Furniture</h1>
                 <input 
                     type="text" 

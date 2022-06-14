@@ -17,6 +17,9 @@
 .header img{
     height: 64px;
 }
+.header img:hover{
+    cursor: pointer;
+}
 .header input{
     width: 30%;
     border: 2px solid rgba(0, 0, 0, 0);
